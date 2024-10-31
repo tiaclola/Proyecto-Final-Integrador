@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		body {
+            background-color: #f2f4f3;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+            align-items: center;
+		}
+		#container {
+			width: 100%;
+            max-width: 700px;
+			margin: 0 auto;
+			background-color: #fbf9f9;
+			flex: 1; 
+		}
+		#cabecera {
+			height: auto;
+			width: 100%;
+            border-radius: 10px;
+		}
+		#menu {
+			display: flex;
+			height: 50px;
+			background-color: #f4f894;
+			border-radius: 10px;
+			margin-top: 0.5rem;
+			justify-content: center;
+		}
+		#menu div {
+			flex: 1;
+			text-align: center;
+			line-height: 50px;
+		}
+		#cajon {
+			background-color: #fcfbfb;
+			height: 470px;
+			width: 600px;
+			margin-top: 0px;
+			margin-right: auto;
+			margin-bottom: 5px;
+			margin-left: auto;
+		}
+		#caja {
+			height: 440px;
+			width: 400px;
+			margin-top: 5px;
+			margin-right: auto;
+			margin-bottom: 5px;
+			margin-left: auto;
+		}
+		a:link, a:visited, a:hover, a:active {
+			color: #000;
+			text-decoration: none;
+		}
+		a:hover, a:active {
+			color: fuchsia;
+		}
+		#pie {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 10px;
+			text-align: center;
+			background-color: #f6c7ea;
+			border-radius: 10px;
+			padding: 10px 0;
+			margin-top: 1rem;
+			margin: 0 auto;
+            max-width: 700px;
+            width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="cabecera"> 
+			<img src="./assets/cabecera tiaclola.jpg" width="700" height="180" />
+		</div>
+		<div id="menu">
+			<div id="boton1"><a href="index.html">Inicio</a></div>
+			<div id="boton2"><a href="hojalaempresa.html">La Empresa</a></div>
+			<div id="boton3"><a href="hojaproductos.html">Productos</a></div>
+			<div id="boton4"><a href="hojacontacto.html">Contacto</a></div>
+		</div>
+		<div id="cajon">
+			<div id="caja">
+				<form action="https://formspree.io/f/manyngrb" method="POST">
+
+					<fieldset>
+					   <legend>
+						  <h1>Formulario de Contacto</h1>
+					   </legend>
+			  
+					   <p>
+						  <label for="name">Nombre</label>
+						  <input type="text" size="30" placeholder="Nombre de la persona" name="name" id="name" required minlength="3" maxlength="10">
+					   </p>
+					   <p>
+						  <label for="lastname">Apellido</label>
+						  <input type="text" size="30" name="lastname" id="lastname">
+					   </p>
+					   <p>
+						  <label for="email">Correo Electronico</label>
+						  <input type="email" name="email" id="email" placeholder="usuario@cuenta.com" pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/" required>
+					   </p>
+					   <p>
+						<label for="">Mensaje</label>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					 </p>
+					 <p>
+						<input type="reset" value="Restablecer">
+						<input type="submit" value="Enviar">
+						
+					 </p>
+				  </fieldset>
+			</div>
+		</div>
+	</div>
+	<footer id="pie">
+		<p>Diseño: Claudia Blandamura ©2024 Tiaclola. Todos los derechos reservados</p>
+		<div id="diseñador">
+			<a href="https://tiaclola.blogspot.com/" target="_blank">Blog: Tiaclola</a>
+		</div>
+	</footer>
+</body>
+</html>
