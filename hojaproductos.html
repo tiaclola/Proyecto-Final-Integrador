@@ -3,12 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 	<title>Productos</title>
 	<style type="text/css">
 		* {
 			box-sizing: border-box;
 		}
 		body {
+			font-family: "roboto", sans-serif;
             background-color: #f2f4f3;
 			margin: 0;
 			padding: 0;
@@ -44,23 +48,45 @@
 		#cajon {
 			background-color: #fcfbfb;
 			height: 0 auto;
-			width: 600px;
+			width: 700px;
 			margin-top: 1rem;
 			margin-right: auto;
-			margin-bottom: 5px;
+			margin-bottom: 1rem;
 			margin-left: auto;
 			font-family: Arial, Helvetica, sans-serif;
 			font-size: 15px;
+			border-radius: 10px;
 		}
 		.productos {
-			list-style-type: circle; /* Elimina los puntos de la lista */
-			column-count: 4; /* Divide en 3 columnas */
-			column-gap: 20px; /* Espacio entre columnas */
+			list-style-type: none; 
+			column-count: 4; 
+			column-gap: 20px; 
 			padding: 0;
 			margin: 0;
 		}
 		.productos li {
-    		margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    		margin-bottom: 10px; 
+		}
+        section {
+			grid-area: productos;
+			text-align: center;
+			.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+        		a {
+            		text-decoration: none;
+
+            		img {
+                		border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+						margin-top: 1rem;
+                		.item {
+							width: 200px;
+							height: 200px;
+            			}
+            		}
+        		}
+    		}
 		}
 		a:link, a:visited, a:hover, a:active {
 			color: #000;
@@ -68,6 +94,35 @@
 		}
 		a:hover, a:active {
 			color: fuchsia;
+		}
+		#reseñas {
+			background-color: #f4f894;
+			border-radius: 10px;
+			padding: 15px;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			width: 700px;
+			font-family: Arial, sans-serif;
+		}
+
+		#reseñas h3 {
+			text-align: center;
+			color: #333333;
+		}
+
+		.reseña {
+			margin-bottom: 15px;
+			padding: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.reseña p {
+			margin: 5px 0;
+		}
+
+		.reseña strong {
+			font-size: 1.1em;
+			color: #555;
 		}
 		#pie {
 			font-family: Arial, Helvetica, sans-serif;
@@ -94,21 +149,66 @@
 			<div id="boton4"><a href="hojacontacto.html">Contacto</a></div>
 		</div>
 		<div id="cajon">
-			<ul class="productos">
-				<li>Bowls</li>
-				<li>Tazas</li>
-				<li>azucareras</li>
-				
-				<li>Teteras</li>
-				<li>Tea for one</li>
-				<li>Bandeja de madera</li>
-				<li>Cajas </li>
-				<li>Organizador</li>
-				<li>Cajas de té</li>
-				<li>cucharitas</li>
-				<li>Bandeja de cerámica</li>
-			</ul>
+            <section>
+                <h3 Seccion de Productos></h3>
+                <div class="container">
+                    <div class="card">
+                        <a href="./pages/producto.html">
+                            <img src="./assets/alhajero .jpg">
+                            <div class="item">
+                                <h3>Alhajero</h3>
+                            	<p>$ 15000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <img src="./assets/bandeja de madera.jpg">
+                            <div class="item">
+                                <h3>Bandeja de madera</h3>
+                                <p>$ 5000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <img src="./assets/bowl.jpg">
+                            <div class="item">
+                                <h3>Bowl</h3>
+                                <p>$ 5000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <img src="./assets/taza.jpg">
+                            <div class="item">
+                                <h3>Taza</h3>
+                                <p>$ 5000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
 		</div>
+		<div id="reseñas">
+			<h3>Reseñas de Clientes</h3>
+			<div class="reseña">
+				<p><strong>Juan Pérez</strong></p>
+				<p>⭐⭐⭐⭐⭐</p>
+				<p>"Excelente calidad, el producto llegó en perfectas condiciones y es tal como lo esperaba. ¡Muy recomendado!"</p>
+			</div>
+			<div class="reseña">
+				<p><strong>María López</strong></p>
+				<p>⭐⭐⭐⭐</p>
+				<p>"Muy buen producto, aunque el envío tomó un poco más de lo esperado."</p>
+			</div>
+			<div class="reseña">
+				<p><strong>Pedro Gómez</strong></p>
+				<p>⭐⭐⭐⭐⭐</p>
+				<p>"Hermoso diseño y excelente atención al cliente. Sin duda compraré de nuevo."</p>
+			</div>
+		
 	</div>
 	<footer id="pie">
 		<p>Diseño: Claudia Blandamura ©2024 Tiaclola. Todos los derechos reservados</p>
