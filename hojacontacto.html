@@ -24,7 +24,6 @@
 			width: 100%;
             max-width: 700px;
 			margin: 0 auto;
-			background-color: #fbf9f9;
 			flex: 1; 
 		}
 		#cabecera {
@@ -47,12 +46,13 @@
 		}
 		#cajon {
 			background-color: #fcfbfb;
-			height: 470px;
-			width: 600px;
-			margin-top: 0px;
+			height: auto;
+			width: 700px;
+			margin-top: 1rem;
 			margin-right: auto;
-			margin-bottom: 5px;
+			margin-bottom: 1rem;
 			margin-left: auto;
+			border-radius: 10px;
 		}
 		#caja {
 			height: 440px;
@@ -81,20 +81,56 @@
             max-width: 700px;
             width: 100%;
 		}
+		@media (max-width: 600px) {
+        #container {
+            max-width: 100%;
+            padding: 0 1rem;
+        }
+
+        #cajon {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #menu {
+            flex-direction: column;
+            height: auto;
+        }
+
+        #menu div {
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+        #cabecera img {
+            width: 100%;
+            height: auto;
+        }
+
+        #caja {
+            width: 100%;
+            height: auto;
+        }
+
+        #pie {
+            font-size: 12px;
+            padding: 1rem;
+        }
+    	}
 	</style>
 </head>
 <body>
 	<div id="container">
 		<div id="cabecera"> 
-			<img src="./assets/Logo TiaClola Artesanias 700x180.jpg" width="700" height="180" />
-		</div>
+			<img src="./assets/Logo TiaClola Artesanias 700x180.jpg" width="700" height="180"/>
+	</div>
 		<div id="menu">
 			<div id="boton1"><a href="index.html">Inicio</a></div>
 			<div id="boton2"><a href="hojalaempresa.html">La Empresa</a></div>
 			<div id="boton3"><a href="hojaproductos.html">Productos</a></div>
 			<div id="boton4"><a href="hojacontacto.html">Contacto</a></div>
 		</div>
-		<div id="cajon">
+	<div id="cajon">
 			<div id="caja">
 				<form action="https://formspree.io/f/manyngrb" method="POST">
 
@@ -126,7 +162,6 @@
 					 </p>
 				  </fieldset>
 			</div>
-		</div>
 	</div>
 	<footer id="pie">
 		<p>Diseño: Claudia Blandamura ©2024 Tiaclola. Todos los derechos reservados</p>
