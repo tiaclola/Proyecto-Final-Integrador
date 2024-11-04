@@ -38,7 +38,7 @@ body {
 }
 #caja {
     height: 250px;
-    width: 770px;
+    width: 100%;
     background-color: #cdf871;
     border-radius: 10px;
     margin-top: 0.5rem;
